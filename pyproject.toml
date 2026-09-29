@@ -1,5 +1,5 @@
 [project]
-name = "my-code"
+name = "my-claude"
 version = "0.1.0"
 description = ""
 authors = [
@@ -15,11 +15,12 @@ dependencies = [
     "rich (>=15.0.0,<16.0.0)",
     "langchain-chroma (>=1.1.0,<2.0.0)",
     "langchain-text-splitters (>=1.1.2,<2.0.0)",
-    "langchain-mcp-adapters (>=0.3.2,<0.4.0)"
+    "langchain-mcp-adapters (>=0.3.2,<0.4.0)",
+    "pyyaml (>=6.0.3,<7.0.0)"
 ]
 
 [tool.poetry]
-packages = [{include = "my_code", from = "src"}]
+packages = [{include = "src"}]
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
